@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="অনুশীলন-১"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/square_button"
+            android:id="@+id/exbutton1" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="অনুশীলন-২"
+            android:id="@+id/exbutton2"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/square_button"
+            android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="কুইজ- ১"
+        android:id="@+id/exbutton3"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/square_button"
+        android:layout_gravity="left|center_vertical" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="কুইজ- ২"
+        android:id="@+id/exbutton4"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/square_button"
+        android:layout_gravity="right|center_vertical" />
+
+
+</FrameLayout>
