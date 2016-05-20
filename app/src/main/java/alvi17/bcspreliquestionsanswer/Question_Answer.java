@@ -2,6 +2,7 @@ package alvi17.bcspreliquestionsanswer;
 
 import android.app.Activity;
 import android.os.Bundle;
+
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -45,6 +46,7 @@ public class Question_Answer extends Activity{
 
 
     String s=
+
            ""
 
 

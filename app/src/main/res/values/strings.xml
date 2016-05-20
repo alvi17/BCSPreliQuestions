@@ -27641,6 +27641,11 @@
             "b.পরভোজী\n" +
             "c.পরাশ্রয়ী\n" +
             "d.মৃতজীবী\n"</item>
+
+
+    </string-array>
+
+    <string-array name="exam2">
         <item>"ব্যাঙ্গের ছাতা এক ধরনের-\n" +
             "a.উদ্ভিদ\n" +
             "b.ছত্রাক জাতীয় উদ্ভিদ\n" +
@@ -27692,7 +27697,168 @@
                    "b.২০০৬\n" +
                    "c.২০০৪\n" +
                    "d.২০০৩\n"</item>
+    </string-array>
 
+    <string-array name="exam3">
+        <item> "ফোর্ট উইলিয়াম কলেজে বাংলা বিভাগ খোলা হয় কত সালে?\n" +
+                   "a. ১৮০১ সালে\n" +
+                   "b. ১৮০৫ সালে\n" +
+                   "c. ১৮০৭ সালে\n" +
+                   "d. ১৮১০ সালে"</item>
+        <item> "‘উদাসীন পথিকের মনের কথা’ কোন জাতীয় রচনা?\n" +
+                  "a. নাটক\n" +
+                  "b. কাব্য\n" +
+                  "c. আত্মজৈবিনিক উপন্যাস\n" +
+                  "d. গীতিকবিতার সংকলন"</item>
+        <item>  "‘পাখি সব করে রব রাতি পোহালে’ - পংক্তিটির রচয়িতা কে?\n" +
+                         "a. মদনমোহন তর্কালঙ্কার\n" +
+                         "b. বিহারীলাল চক্রবর্তী\n" +
+                         "c. কৃষ্ণচন্দ্র মজুমদার\n" +
+                         "d. রামনারায়ণ তর্করত্ন"</item>
+        <item>    "ভারতচন্দ্র রায়গুণাকর কোন রাজসভার কবি?\n" +
+                       "a. আরাকান রাপসভা\n" +
+                       "b. কৃষ্ণনগর রাজসভা\n" +
+                       "c. রাজ গনেশের রাজসভা\n" +
+                       "d. লক্ষ্মণ সেনের রাজসভা"</item>
+        <item>"যা কিছু হারায় গিন্নী বলেন, কেষ্ট বেটাই চোর- এখানে হারায় কোন ধাতু?\n" +
+                   "a. প্রযোজক ধাতু\n" +
+                   "b. ভাব বাচ্যের ধাতু\n" +
+                   "c. সংযোগমূলক ধাতু\n" +
+                   "d. নাম ধাতু"</item>
+        <item> "‘মহুয়া’ পালাটির রচয়িতা-\n" +
+                   "a. দ্বিজ কানাই\n" +
+                   "b. মনসুর বয়াতী\n" +
+                   "c. নয়নচাঁদ ঘোষ\n" +
+                   "d. দ্বিজ ঈশান"</item>
+        <item>"কে সর্বপ্রথম বাংলা টাইপ সহযোগে বাংলা ব্যাকরণ মুদ্রন করেন?\n" +
+                  "a. স্যার উইলিয়াম জোনস\n" +
+                  "b. স্যার উইলিয়াম কেরি\n" +
+                  "c. রাজিব লোচন মুখোপাধ্যায়\n" +
+                  "d. ব্রাসি হ্যালহেড"</item>
+        <item>"জীবাশ্ব জ্বালানি দহনের ফলে বায়ু অঞ্চলে দে গ্রিন গ্যাসের পরিমাণ সবচেয়ে বেশি বৃদ্ধি পাচ্ছে-\n" +
+                  "a. জ্বালানি বাষ্প\n" +
+                  "b. ক্লোরোফ্লোরো কার্বন\n" +
+                  "c. কার্বনডাই-অক্সাইড\n" +
+                  "d. মিথেন"</item>
+        <item>"কাঁচ তৈরির প্রধান কাঁচামাল-\n" +
+                  "a. শাজিমাটি\n" +
+                  "b. চুনাপাথর\n" +
+                  "c. জিপশাম\n" +
+                  "d. বালি\n" </item>
+        <item>She would not talk to you if she -------- mad at you. \n
+	a. is \n
+	b. were \n
+	c. was \n
+	d. will be \n</item>
+
+    </string-array>
+
+    <string-array name="exam4">
+        <item>"\'Read between the lines\' means--\n" +
+                  "a.Read carelessly\n" +
+                  "b.Read critically\n" +
+                  "c.Read superficially\n" +
+                  "d.Read to get pleasure"</item>
+        <item>"Which of the following sentence is an example of active and present indefinite tense?\n" +
+                  "a.He i writing a letter.\n" +
+                  "b.I have invited them\n" +
+                  "c.He has done the work\n" +
+                  "d.Floods destroy crops"</item>
+        <item>"To put the cart before the horse----\n" +
+                  "a.To offer a person what he cannot eat\n" +
+                  "b.To force a person to do something\n" +
+                  "c.To raise obstacle\n" +
+                  "d.To reverse the natural order of things"</item>
+        <item>"Choose the synonym for this 'Quarrel'\n" +
+                  "a.Agreement\n" +
+                  "b.Reconciliation\n" +
+                  "c.Peach\n" +
+                  "d.Dispute"</item>
+        <item> "\'Maiden speech\' means--------\n" +
+                  "a.First speech\n" +
+                  "b.Last speech\n" +
+                  "c.Late speech\n" +
+                  "d.Early speech"</item>
+        <item>"Many years have passed since I ------- my friend.\n" +
+                    "a.had met\n" +
+                    "b.met\n" +
+                    "c.meet\n" +
+                    "d.have been met"</item>
+        <item>"The antonym of INFRINGE is ----------\n" +
+                    "a.Transgress\n" +
+                    "b.Purloin\n" +
+                    "c.Invade\n" +
+                    "d.obey"</item>
+        <item>"The antonym of \'indifference\' is ---------\n" +
+                    "a.Ardour\n" +
+                    "b.Compassion\n" +
+                    "c.Anxietly\n" +
+                    "d.Concern"</item>
+        <item>"Chose the correct synonym for 'Extempore'\n" +
+                    "a.Planned\n" +
+                    "b.Impromtu\n" +
+                    "c.Improvise\n" +
+                    "d.Immediate"</item>
+        <item>"What is the antonym of \"Queer\" ?\n" +
+                    "a.Integrated\n" +
+                    "b.Orderly\n" +
+                    "c.Abnormal\n" +
+                    "d.Odd"</item>
+
+    </string-array>
+
+
+    <string-array name="exam5">
+        <item>"We often------- a victim of circumstances.\n" +
+                    "a.fallen\n" +
+                    "b.felt\n" +
+                    "c.did fall\n" +
+                    "d.fall"</item>
+        <item>"The synonym fo \'identical\' is -----\n" +
+                    "a.Familiar\n" +
+                    "b.Recognisable\n" +
+                    "c.Exactly the same\n" +
+                    "d.Almost similar"</item>
+        <item>"Choose the synonym for this \'Shame\'\n" +
+                    "a.Neglect\n" +
+                    "b.Glory\n" +
+                    "c.Pardon\n" +
+                    "d.Ignominty"</item>
+        <item>"Chose the antonyme for \'Exodus\'\n" +
+                    "a.Gain\n" +
+                    "b.Neglect\n" +
+                    "c.Entry\n" +
+                    "d.Trivial Point"</item>
+        <item> "He ran fast lest he---------- miss the train.\n" +
+                    "a.can\n" +
+                    "b.should\n" +
+                    "c.could\n" +
+                    "d.has"</item>
+        <item>"I wish  i ------ wonderful man.\n" +
+                   "a.was\n" +
+                   "b.were\n" +
+                   "c.would be\n" +
+                   "d.am"</item>
+        <item>"Fast-food restaurants have become popular in our country because many working people------------\n" +
+                   "a.to eat quickly and cheaply\n" +
+                   "b.eat quickly and cheaply\n" +
+                   "c.eating quickly and cheaply\n" +
+                   "d.None of these"</item>
+        <item>"I have been doing is---------\n" +
+                   "a.Present Indefinite\n" +
+                   "b.Present Continous\n" +
+                   "c.Present Perfect\n" +
+                   "d.Present Perfect Continuouse"</item>
+        <item>"Try hard lest you-----------fail.\n" +
+                   "a.may\n" +
+                   "b.might\n" +
+                   "c.should\n" +
+                   "d.would"</item>
+        <item>"\'Out and Out\' means--\n" +
+                   "a.Absolute\n" +
+                   "b.Outside\n" +
+                   "c.External\n" +
+                   "d.Rural"</item>
     </string-array>
 
 </resources>

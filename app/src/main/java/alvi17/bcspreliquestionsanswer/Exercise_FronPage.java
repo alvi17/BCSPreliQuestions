@@ -12,7 +12,7 @@ import android.widget.Button;
  */
 public class Exercise_FronPage extends Activity implements View.OnClickListener{
 
-    Button b1,b2,b3,b4;
+    Button b1,b2,b3,b4,b5,b6,b7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +23,17 @@ public class Exercise_FronPage extends Activity implements View.OnClickListener{
         b2=(Button)findViewById(R.id.exbutton2);
         b3=(Button)findViewById(R.id.exbutton3);
         b4=(Button)findViewById(R.id.exbutton4);
+        b5=(Button)findViewById(R.id.exbutton5);
+        b6=(Button)findViewById(R.id.exbutton6);
+        b7=(Button)findViewById(R.id.exbutton7);
 
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
         b4.setOnClickListener(this);
+        b5.setOnClickListener(this);
+        b6.setOnClickListener(this);
+        b7.setOnClickListener(this);
 
     }
 
@@ -50,6 +56,27 @@ public class Exercise_FronPage extends Activity implements View.OnClickListener{
                 return;
             case R.id.exbutton3:
                 intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",0);
+                startActivity(intent);
+                return;
+            case R.id.exbutton4:
+                intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",1);
+                startActivity(intent);
+                return;
+            case R.id.exbutton5:
+                intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",2);
+                startActivity(intent);
+                return;
+            case R.id.exbutton6:
+                intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",3);
+                startActivity(intent);
+                return;
+            case R.id.exbutton7:
+                intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",4);
                 startActivity(intent);
                 return;
 
