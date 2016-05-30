@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
         b2=(Button)findViewById(R.id.exbutton);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-
 
     }
 

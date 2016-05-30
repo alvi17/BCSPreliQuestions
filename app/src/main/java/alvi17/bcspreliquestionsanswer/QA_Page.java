@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 /**
  * Created by User on 5/5/2016.
  */
@@ -14,7 +18,7 @@ public class QA_Page extends Activity{
 
 
     GridView gridView;
-
+    private InterstitialAd interstitial;
     String[] names={"১০ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান","১১ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান","১২ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান","১৩ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান",
    " ১৪ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান","১৫ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান","১৬ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান","১৭ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান",
             " ১৮ তম বিসিএস পরীক্ষার প্রশ্ন ও সমাধান",
@@ -53,6 +57,22 @@ public class QA_Page extends Activity{
 
             }
         });
+
+        interstitial=new  InterstitialAd(this);
+        interstitial.setAdUnitId("ca-app-pub-6508526601344465/5841176834");
+        AdRequest aRequest = new AdRequest.Builder().build();
+
+        // Begin loading your interstitial.
+        interstitial.loadAd(aRequest);
+        interstitial.setAdListener(
+                new AdListener() {
+                    @Override
+                    public void onAdLoaded() {
+                        super.onAdLoaded();
+                        interstitial.show();
+                    }
+                }
+        );
 
     }
 }

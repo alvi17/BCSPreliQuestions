@@ -2,7 +2,14 @@ package alvi17.bcspreliquestionsanswer;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 import org.w3c.dom.Text;
 
@@ -12,11 +19,24 @@ import org.w3c.dom.Text;
 public class QA extends Activity{
 
     TextView txt,title;
+    FrameLayout fm;
+    AdView adView;
+    LinearLayout layout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ques_ans_layout);
 
+        fm=(FrameLayout)findViewById(R.id.qa_frame);
+        adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-6508526601344465/2887710430");
+        adView.setAdSize(AdSize.BANNER);
+        layout = new LinearLayout(this);
+        layout.setGravity(Gravity.BOTTOM| Gravity.CENTER_HORIZONTAL);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        layout.addView(adView);
+        fm.addView(layout);
         int pos=getIntent().getIntExtra("Position",0);
 
         txt=(TextView)findViewById(R.id.qatextView);
@@ -144,6 +164,15 @@ public class QA extends Activity{
             title.setText(getResources().getString(R.string.q36_title));
             txt.setText(getResources().getString(R.string.q36).replace(" "," "));
         }
+
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+
 
     }
 }

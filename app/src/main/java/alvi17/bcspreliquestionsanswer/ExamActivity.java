@@ -2,53 +2,72 @@ package alvi17.bcspreliquestionsanswer;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 /**
  * Created by User on 5/10/2016.
  */
 public class ExamActivity extends Activity{
-
+    public static final String MyPreference="mypreference";
+    SharedPreferences sharedpreference;
 
     String[] ans1={"d","d","a","a","a","c","c","c","a","a"};
-
     String[] ans2={"b","c","d","a","a","b","d","c","a","c"};
-
     String[] ans3={"a","c","a","b","a","a","d","c","d","b"};
-
     String[] ans4={"b","d","d","d","a","b","d","d","b","b"};
     String[] ans5={"d","c","d","c","b","b","b","d","c","a"};
-
-
+    String[] ans6={"d","b","a","d","c","b","a","d","c","b"};
+    String[] ans7={"b","a","a","b","c","d","d","d","b","c"};
+    String[] ans8={"c","b","b","d","d","d","c","a","a","a"};
+    String[] ans9={"b","b","d","b","d","a","a","b","a","a"};
 
     TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10;
-
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10;
 
     Button b;
-
     String[] ques;
     int correct=0;
     int incorrect=0;
     Dialog dialog;
 
     int tried=0;
-
+    int serial;
+    FrameLayout fm;
+    AdView adView;
+    LinearLayout layout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exam_layout);
 
-        int serial=getIntent().getIntExtra("Exam",0);
+        serial=getIntent().getIntExtra("Exam",0);
 
-
+        fm=(FrameLayout)findViewById(R.id.exam_frame);
+        adView=new AdView(this);
+        adView.setAdUnitId("ca-app-pub-6508526601344465/2887710430");
+        adView.setAdSize(AdSize.BANNER);
+        layout = new LinearLayout(this);
+        layout.setGravity(Gravity.BOTTOM| Gravity.CENTER_HORIZONTAL);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        layout.addView(adView);
+        fm.addView(layout);
         if(serial==0)
         {
             ques=getResources().getStringArray(R.array.exam1);
@@ -74,7 +93,23 @@ public class ExamActivity extends Activity{
             ans1=ans5;
             ques=getResources().getStringArray(R.array.exam5);
         }
-
+        else if(serial==5)
+        {
+            ans1=ans6;
+            ques=getResources().getStringArray(R.array.exam6);
+        }else if(serial==6)
+        {
+            ans1=ans7;
+            ques=getResources().getStringArray(R.array.exam7);
+        }else if(serial==7)
+        {
+            ans1=ans8;
+            ques=getResources().getStringArray(R.array.exam8);
+        }else if(serial==8)
+        {
+            ans1=ans9;
+            ques=getResources().getStringArray(R.array.exam9);
+        }
 
 
 
@@ -181,8 +216,13 @@ public class ExamActivity extends Activity{
                     }
                     tried = 1;
                     // Toast.makeText(getApplicationContext(),e10.getText().toString()+" ",Toast.LENGTH_LONG).show();
+                    sharedpreference=getApplicationContext().getSharedPreferences(MyPreference, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor save=sharedpreference.edit();
+                    save.putInt("Quiz"+serial,correct);
+                    save.commit();
                     showDialog(correct, incorrect);
                 }
+
                 else {
                     finish();
                     startActivity(getIntent());
@@ -194,8 +234,6 @@ public class ExamActivity extends Activity{
         });
 
     }
-
-
 
     public void showDialog(int correct,int incorrect)
     {
@@ -217,12 +255,13 @@ public class ExamActivity extends Activity{
             }
         });
 
+
         this.correct=0;
         this.incorrect=0;
 
         dialog.show();
 
-        Toast.makeText(getApplicationContext(),"Score: \n Correct :"+correct+"\n Incorrect :"+incorrect+"\n",Toast.LENGTH_LONG).show();
+     //   Toast.makeText(getApplicationContext(),"Score: \n Correct :"+correct+"\n Incorrect :"+incorrect+"\n",Toast.LENGTH_LONG).show();
     }
 
     public void showResult()
@@ -321,5 +360,13 @@ public class ExamActivity extends Activity{
             t10.setBackgroundColor(Color.argb(210,190,240,170));
 
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+
+
     }
 }

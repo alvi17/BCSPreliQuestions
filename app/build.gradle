@@ -8,12 +8,12 @@ android {
         applicationId "alvi17.bcspreliquestionsanswer"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.2"
     }
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         applicationVariants.all { variant ->
@@ -21,7 +21,7 @@ android {
 
                 def newName = output.outputFile.name
                 newName = newName.replace("app-", "BCS Preli Preparation") //"MyAppName" -> I set my app variables in the root project
-                newName = newName.replace("release","")
+                newName = newName.replace("release", "")
                 //noinspection GroovyAssignabilityCheck
                 output.outputFile = new File(output.outputFile.parent, newName)
             }
@@ -30,10 +30,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:design:22.2.1'
     compile 'com.android.support:cardview-v7:22.2.1'
     compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.google.android.gms:play-services-ads:9.0.0'
 }

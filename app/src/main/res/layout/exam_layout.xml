@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
     android:background="#FFF"
+    android:id="@+id/exam_frame"
     android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
     <LinearLayout
         android:orientation="vertical"
@@ -237,12 +244,21 @@
     </FrameLayout>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="Submit"
             android:id="@+id/submitbutton"
             android:textAllCaps="false"
+            android:padding="5dp"
             android:background="@drawable/button_back"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</FrameLayout>
