@@ -36,7 +36,9 @@ public class ExamActivity extends Activity{
     String[] ans7={"b","a","a","b","c","d","d","d","b","c"};
     String[] ans8={"c","b","b","d","d","d","c","a","a","a"};
     String[] ans9={"b","b","d","b","d","a","a","b","a","a"};
-
+    String[] ans10={"c","a","a","a","d","c","a","a","a","a"};
+    String[] ans11={"c","b","c","c","b","b","c","a","a","b"};
+    String[] ans12;
     TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10;
 
@@ -110,8 +112,22 @@ public class ExamActivity extends Activity{
             ans1=ans9;
             ques=getResources().getStringArray(R.array.exam9);
         }
+        else if(serial==9)
+        {
+            ans1=ans10;
+            ques=getResources().getStringArray(R.array.exam10);
+        }
+        else if(serial==10)
+        {
+            ans1=ans11;
+            ques=getResources().getStringArray(R.array.exam11);
+        }
 
-
+        else if(serial==11)
+        {
+            ans1=ans12;
+            ques=getResources().getStringArray(R.array.exam12);
+        }
 
         t1=(TextView)findViewById(R.id.examtextView1);
         t2=(TextView)findViewById(R.id.examtextView2);

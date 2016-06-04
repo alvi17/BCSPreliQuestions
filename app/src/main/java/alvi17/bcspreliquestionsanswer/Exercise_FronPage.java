@@ -18,7 +18,7 @@ import com.google.android.gms.ads.InterstitialAd;
  */
 public class Exercise_FronPage extends Activity implements View.OnClickListener{
 
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15;
     public static final String MyPreference="mypreference";
     SharedPreferences sharedpreference;
     private InterstitialAd interstitial;
@@ -40,7 +40,9 @@ public class Exercise_FronPage extends Activity implements View.OnClickListener{
         b10=(Button)findViewById(R.id.exbutton10);
         b11=(Button)findViewById(R.id.exbutton11);
         b12=(Button)findViewById(R.id.exbutton12);
-
+        b13=(Button)findViewById(R.id.exbutton13);
+        b14=(Button)findViewById(R.id.exbutton14);
+        b15=(Button)findViewById(R.id.exbutton15);
 
 
         b1.setOnClickListener(this);
@@ -56,6 +58,9 @@ public class Exercise_FronPage extends Activity implements View.OnClickListener{
         b11.setOnClickListener(this);
         b12.setOnClickListener(this);
 
+        b13.setOnClickListener(this);
+        b14.setOnClickListener(this);
+        b15.setOnClickListener(this);
 
         interstitial=new  InterstitialAd(this);
         interstitial.setAdUnitId("ca-app-pub-6508526601344465/5841176834");
@@ -116,6 +121,18 @@ public class Exercise_FronPage extends Activity implements View.OnClickListener{
         if(sharedpreference.contains("Quiz8"))
         {
             b11.setText("কুইজ- ৯\n"+sharedpreference.getInt("Quiz8",0)+"/10");
+        }
+        if(sharedpreference.contains("Quiz9"))
+        {
+            b13.setText("কুইজ- ১০\n"+sharedpreference.getInt("Quiz9",0)+"/10");
+        }
+        if(sharedpreference.contains("Quiz10"))
+        {
+            b14.setText("কুইজ- ১১\n"+sharedpreference.getInt("Quiz10",0)+"/10");
+        }
+        if(sharedpreference.contains("Quiz11"))
+        {
+            b15.setText("কুইজ- ১২\n"+sharedpreference.getInt("Quiz11",0)+"/10");
         }
     }
 
@@ -185,6 +202,21 @@ public class Exercise_FronPage extends Activity implements View.OnClickListener{
             case R.id.exbutton11:
                 intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
                 intent.putExtra("Exam",8);
+                startActivity(intent);
+                return;
+            case R.id.exbutton13:
+                intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",9);
+                startActivity(intent);
+                return;
+            case R.id.exbutton14:
+                intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",10);
+                startActivity(intent);
+                return;
+            case R.id.exbutton15:
+                intent=new Intent(Exercise_FronPage.this,ExamActivity.class);
+                intent.putExtra("Exam",11);
                 startActivity(intent);
                 return;
         }

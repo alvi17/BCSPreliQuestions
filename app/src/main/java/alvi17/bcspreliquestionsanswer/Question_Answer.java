@@ -47,9 +47,7 @@ public class Question_Answer extends Activity{
 
     String s=
 
-       ""
-
-
+""
             ;
 
 
