@@ -38,7 +38,11 @@ public class ExamActivity extends Activity{
     String[] ans9={"b","b","d","b","d","a","a","b","a","a"};
     String[] ans10={"c","a","a","a","d","c","a","a","a","a"};
     String[] ans11={"c","b","c","c","b","b","c","a","a","b"};
-    String[] ans12;
+    String[] ans12={"c","b","c","d","d","b","a","a","b","b"};
+    String[] ans13={"d","d","d","d","b","a","d","a","b","b"};
+    String[] ans14={"d","b","b","b","a","c","c","b","b","b"};
+    String[] ans15={"a","a","a","d","c","c","c","d","b","a"};
+
     TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10;
 
@@ -127,6 +131,21 @@ public class ExamActivity extends Activity{
         {
             ans1=ans12;
             ques=getResources().getStringArray(R.array.exam12);
+        }
+        else if(serial==12)
+        {
+            ans1=ans13;
+            ques=getResources().getStringArray(R.array.exam13);
+        }
+        else if(serial==13)
+        {
+            ans1=ans14;
+            ques=getResources().getStringArray(R.array.exam14);
+        }
+        else if(serial==14)
+        {
+            ans1=ans15;
+            ques=getResources().getStringArray(R.array.exam15);
         }
 
         t1=(TextView)findViewById(R.id.examtextView1);
